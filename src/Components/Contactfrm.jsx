@@ -53,13 +53,8 @@ function Contactfrm() {
     event.preventDefault();
     if(input.message === "" || input.name=== "" || input.email=== "" || input.subject=== "")
     {
-      console.log('Error')
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Validation Error",
-        footer: ''
-      });
+      console.log('Validation Error')
+      alert('Validation Error')
     }
   else{
     const newnote={
